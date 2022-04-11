@@ -4,7 +4,7 @@ use super::utils::BitArray;
 //
 // Button Function
 //
-#[derive(Debug)]
+#[derive(Debug, Clone, Copy)]
 pub enum ButtonFunction {
     Nothing,
     OneArrow(OneArrow),
@@ -39,7 +39,7 @@ pub enum TwoArrow {
 //
 // Coordinate
 //
-#[derive(Debug, PartialEq, Eq, Hash, Clone)]
+#[derive(Debug, PartialEq, Eq, Hash, Clone, Copy)]
 pub struct Coordinate {
     pub x: i32,
     pub y: i32,
